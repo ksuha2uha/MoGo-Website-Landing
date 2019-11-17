@@ -15,9 +15,9 @@
         <div class="header__section">
             <span>MoGo</span>
                 <ul class="header__section_navigation">
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICE</a></li>
-                    <li><a href="#">WORK</a></li>
+                    <li><a href="#story">ABOUT</a></li>
+                    <li><a href="#services">SERVICE</a></li>
+                    <li><a href="#work">WORK</a></li>
                     <li><a href="#">BLOG</a></li>
                     <li><a href="#">CONTACT</a></li>
                     <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
@@ -31,13 +31,13 @@
             <button>LEARN MORE</button>
         </div>
         <ul class="header__list">
-            <li><a href=""><hr><span>01</span> INTRO</a></li>
-            <li><a href=""><hr><span>02</span> WORK</a></li>
-            <li><a href=""><hr><span>03</span> ABOUT</a></li>
+            <li><a href="#story"><hr><span>01</span> INTRO</a></li>
+            <li><a href="#work"><hr><span>02</span> WORK</a></li>
+            <li><a href="#team"><hr><span>03</span> ABOUT</a></li>
             <li><a href=""><hr><span>04</span> CONTACTS</a></li>
         </ul>
     </div>
-    <div class="story">
+    <div class="story" id="story">
         <div class="story__all">
             <div class="story__description">
                 <span class="story__title">What we do</span>
@@ -92,7 +92,7 @@
             </div>
         </div>
     </div>
-    <div class="services">
+    <div class="services" id="services">
         <div class="services__all">
             <div class="services__description">
                 <span class="services__title">We work with</span>
@@ -157,8 +157,8 @@
                  <span class="design__title">For all devices</span>
                  <span class="design__subtitle">UNIQUE DESIGN</span>
                  <hr>
-                 <img src="assets/css/img/designMobi.png" alt=""text>
-                 <img src="assets/css/img/designIphone.png" alt=""text>
+                 <img src="assets/img/designMobi.png" alt=""text>
+                 <img src="assets/img/designIphone.png" alt=""text>
              </div>
          </div>
     </div>
@@ -171,7 +171,7 @@
                  <p class="accordion__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
              </div>
              <div class="accordion__depiction">
-                 <img src="assets/css/img/doMen.png" alt="text">
+                 <img src="assets/img/doMen.png" alt="text">
                  <div class="accordion-maker">
                      <div class="accordionItem open">
                          <button class="accordionItemHeading"><i class="far fa-image"></i>PHOTOGRAPHY</button>
@@ -246,9 +246,9 @@
              <!-- Full-width slides/quotes -->
              <div class="mySlides">
                  <i class="far fa-comment-alt"></i>
-                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                 <span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                     Ut enim ad minim veniam, quis nostrud exercitation.
+                     Ut enim ad minim veniam, quis nostrud exercitation."
                      <p class="author">Jon Doe </p>
                  </span>
 
@@ -256,18 +256,18 @@
 
              <div class="mySlides">
                  <i class="far fa-comment-alt"></i>
-                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                 <span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                      <p class="author">Jon Doe </p>
                  </span>
              </div>
 
              <div class="mySlides">
                  <i class="far fa-comment-alt"></i>
-                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                 <span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                      Ut enim ad minim veniam, quis nostrud exercitation.
-                     Ut enim ad minim veniam.
+                     Ut enim ad minim veniam."
                      <p class="author">Jon Doe </p>
                  </span>
              </div>
@@ -278,7 +278,7 @@
          </div>
      </div>
 
-     <div class="team__wrapper">
+     <div class="team__wrapper" id="team">
          <div class="team__all">
              <div class="team__description">
                  <span class="team__title">Who we are</span>
@@ -286,10 +286,151 @@
                  <hr>
                  <p class="team__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
              </div>
-             <div class="team__photo"></div>
+             <div class="team__photo">
+                 <div  class="team__hover" >
+<!--                     <ul class="team__ul">-->
+<!--                         <li><a href=""><i class="fab fa-facebook-f"></i></a></li>-->
+<!--                         <li><a href=""><i class="fab fa-twitter"></i></a></li>-->
+<!--                         <li><a href=""><i class="fab fa-pinterest-p"></i></a></li>-->
+<!--                         <li><a href=""><i class="fab fa-instagram"></i></a></li>-->
+<!--                     </ul>-->
+                     <div id="matt">
+                         <ul class="team__ul">
+                             <li><a href="https://www.facebook.com/" class="team__link"><i class="fab fa-facebook-f"></i></a></li>
+                             <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                             <li><a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p"></i></a></li>
+                             <li><a id="last__link" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                     </div>
+                     <div class="team__text">
+                         <div>Matthew Dix</div>
+                         <div>Graphic Design</div>
+                     </div>
+
+                 </div>
+                 <div class="team__hover">
+                    <div id="chris">
+                         <ul class="team__ul">
+                             <li><a href="https://www.facebook.com/" class="team__link"><i class="fab fa-facebook-f"></i></a></li>
+                             <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                             <li><a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p"></i></a></li>
+                             <li><a id="last__link-two" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                         </ul>
+                        </div>
+                     <div class="team__text">
+                         <div>Christopher Campbell</div>
+                         <div>Branding/UX design</div>
+                     </div>
+                 </div>
+                 <div class="team__hover">
+                     <div id="michael">
+                         <ul class="team__ul">
+                             <li><a href="https://www.facebook.com/" class="team__link"><i class="fab fa-facebook-f"></i></a></li>
+                             <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                             <li><a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p"></i></a></li>
+                             <li><a id="last__link-three" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                         </ul>
+                     </div>
+                     <div class="team__text">
+                         <div>Michael Fertig</div>
+                         <div>Developer</div>
+                     </div>
+                 </div>
+             </div>
          </div>
 
      </div>
+
+     <div class="label__wrapper">
+         <div class="label__img">
+             <img src="assets/img/lableOne.png" alt="">
+             <img src="assets/img/lableTwo.png" alt="">
+             <img src="assets/img/lableOne.png" alt="">
+             <img src="assets/img/lableTwo.png" alt="">
+             <img src="assets/img/lableOne.png" alt="">
+             <img src="assets/img/lableTwo.png" alt="">
+         </div>
+     </div>
+
+    <div class="work__wrapper" id="work">
+            <div class="work__description">
+                <span class="work__title">Who we are</span>
+                <span class="work__subtitle">SOME OF OUR WORK</span>
+                <hr>
+                <p class="work__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </div>
+            <div class="work__photo">
+                <div class="work__photo_square">
+                    <div class="work__photo_item">
+                        <img src="assets/img/workMen.png" alt="">
+                        <div class="work__photo_hover-item">
+                            <i class="fas fa-image"></i>
+                            <span>CREATIVELY DESIGN</span>
+                            <span>Lorem ipsum dolar sit</span>
+                        </div>
+                    </div>
+                    <div class="work__photo_item">
+                        <img src="assets/img/workBridge.png" alt="">
+                        <div class="work__photo_hover-item">
+                            <i class="fas fa-image"></i>
+                            <span>CREATIVELY DESIGN</span>
+                            <span>Lorem ipsum dolar sit</span>
+                        </div>
+                    </div>
+                    <div class="work__photo_item">
+                        <img src="assets/img/workArch.png" alt="">
+                        <div class="work__photo_hover-item">
+                            <i class="fas fa-image"></i>
+                            <span>CREATIVELY DESIGN</span>
+                            <span>Lorem ipsum dolar sit</span>
+                        </div>
+                    </div>
+                    <div class="work__photo_item">
+                        <img src="assets/img/workWindow.png" alt="">
+                        <div class="work__photo_hover-item">
+                            <i class="fas fa-image"></i>
+                            <span>CREATIVELY DESIGN</span>
+                            <span>Lorem ipsum dolar sit</span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="work__photo__block">
+                    <div class="work__photo_item" id="jelly">
+                        <img src="assets/img/workJellyfish.png" alt="">
+                        <div class="work__photo_hover-item">
+                            <i class="fas fa-image"></i>
+                            <span>CREATIVELY DESIGN</span>
+                            <span>Lorem ipsum dolar sit</span>
+                        </div>
+                    </div>
+
+                    <div class="work__photo_two">
+                        <div class="work__photo_item">
+                            <img src="assets/img/workWindows2.png" alt="">
+                            <div class="work__photo_hover-item">
+                                <i class="fas fa-image"></i>
+                                <span>CREATIVELY DESIGN</span>
+                                <span>Lorem ipsum dolar sit</span>
+                            </div>
+                        </div>
+                        <div class="work__photo_item">
+                            <img src="assets/img/workBuildingSky.png" alt="">
+                            <div class="work__photo_hover-item">
+                                <i class="fas fa-image"></i>
+                                <span>CREATIVELY DESIGN</span>
+                                <span>Lorem ipsum dolar sit</span>
+                            </div>
+                        </div>
+
+                     </div>
+
+                </div>
+            </div>
+    </div>
+
 </main>
 
 <script src="assets/js/index.js"></script>
